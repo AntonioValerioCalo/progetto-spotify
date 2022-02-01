@@ -1,0 +1,19 @@
+body { background-color: white;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr auto 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+     "header header"
+     "main main"
+     "footer footer";
+}
+header,main,footer {
+ padding: 8px 16px;
+ 
+}
+header {
+    grid-area: header;
+}
+header>
