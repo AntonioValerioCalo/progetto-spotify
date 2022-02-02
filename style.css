@@ -41,3 +41,16 @@ svg#iphone {
 
     width: 570px;
 }
+
+.section3 {
+    background: linear-gradient(rgb(176, 35, 194) 15%, rgb(96, 11, 231));
+    text-align: center;
+    padding-top: 125px;
+    padding-bottom: 125px;
+
+}
+
+.title {
+    color: white;
+    font-size: 40px;
+}
