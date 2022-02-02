@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+    background-color: black;
+    align-items: center;
+
+
+}
+
+.spotify {
+    height: 85px;
+}
+
+.premium {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    padding: 10px;
+    margin: 5px;
+}
+
+.separation {
+    display: inline-block;
+    height: 16px;
+    width: 2px;
+    background-color: white;
+}
+
+.body {
+    margin: 0px;
+}
+
+.milioni {
+    background-image: url(assets-free/balls.svg)
+}
+
+svg#iphone {
+    height: 286px;
+
+    width: 570px;
+}
