@@ -54,3 +54,16 @@ svg#iphone {
     color: white;
     font-size: 40px;
 }
+
+.footer-title {
+    color: rgb(131, 130, 130);
+}
+
+.footer-subtitle {
+    color: white;
+}
+
+.icone {
+    background-color: white;
+    width: 24px;
+}
