@@ -1,49 +1,393 @@
-body { background-color: white;
-    margin: 0px;
+body {
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+
+  margin: 0px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+}
+.none-decoration {
+  text-decoration: none;
+ 
+}
+header,
+main,
+footer {
+  padding: auto;
+}
+header > .container-header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 0px 10px;
+  grid-template-areas: "nav-spotify-artists function nav-button";
+  background-color: black;
+  padding: 10px 12px;
+  color: white;
+}
+
+img[src="assets-artist/spotify-intro.png"] {
+  border-radius: 50%;
+}
+.near-logo {
+  display: inline;
+  position: relative;
+  top: 5px;
+  font-size: 20px;
+}
+
+.nav-spotify-artist {
+  grid-area: nav-spotify-artists;
+  align-self: center;
+}
+
+.function {
+  grid-area: function;
+  text-align: center;
+  align-self: center;
+}
+
+.function1 {
+  text-decoration: none;
+  color: white;
+  padding-left: 30px;
+  font-size: 15px;
+}
+.function1:hover {
+  color: rgb(184, 182, 182);
+}
+.nav-button {
+  display: flex;
+  grid-area: nav-button;
+
+  align-self: center;
+  justify-content: flex-end;
+
+  height: 40px;
+}
+
+.nav-button > .nav-button1 {
+  border-radius: 50px;
+  padding: 6px 16px 6px 16px;
+  background-color: transparent;
+  color: white;
+  display: flex;
+  position: absolute;
+  right: 250px;
+  align-self: center;
+}
+.nav-button1:hover {
+  width: 80px;
+  height: 30px;
+}
+
+.nav-button > .nav-button2 {
+  border-radius: 50px;
+  padding: 6px 16px 6px 16px;
+  background-color: transparent;
+  color: white;
+  display: flex;
+  position: absolute;
+  right: 150px;
+  align-self: center;
+}
+.nav-button2:hover {
+  width: 80px;
+  height: 30px;
+}
+
+.nav-button > .nav-button3 {
+  display: flex;
+  border-radius: 50px;
+  padding: 6px;
+  margin: 0px;
+  position: absolute;
+}
+
+.nav-button3:hover {
+  width: 135px;
+  height: 40px;
+}
+
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "carousel1"
+    "la-tua-musica"
+    "jeremy-zucker"
+    "how-begin";
+}
+
+.first{
+  display: flex;
+  background-color: rgb(65, 0, 245);
+  justify-content: flex-end;
+  flex-flow: row-reverse wrap;
+  width: 1528px;
+  height: 783px;
+}
+
+.text-fan {
+  text-align: left;
+}
+.h1-fan {
+  font-size: clamp(32px, 5vw, 94px);
+  color: white;
+}
+
+.first> .text-container-fan {
+  display: inline-block;
+  position: relative;
+  left: 300px;
+  top: 100px;
+
+  width: 579px;
+  color: white;
+}
+.text-fan {
+  text-align: left;
+}
+.h1-fan {
+  font-size: clamp(32px, 5vw, 94px);
+  color: white;
+}
+.color-span{
+    color: white;
+}
+.color-span:hover{
+    color: grey;
+}
+.first > .img-kevin {
+  position: relative;
+  display: inline-block;
+  left: 350px;
+  top: 0px;
+}
+
+img[src="assets-artist/kevin.png"] {
+  width: 579px;
+  height: 579px;
+}
+
+.second{
+    display: flex;
+  background-color: rgb(25, 20, 20);;
+  justify-content: flex-end;
+  flex-flow: row-reverse wrap;
+  width: 1528px;
+  height: 783px; 
+
+}
+
+.second>.text-container-welcome{
+    display: inline-block;
+    position: relative;
+    left: 300px;
+    bottom:16px;
+    width: 579px;
+    color: white;
+
+
+}
+
+.h1-welcome{
+    font-size: 80px;
+    color: rgb(195, 241, 200);;
+}
+.text-welcome{
+    color: rgb(195, 241, 200);;
+}
+.second>.img-s4a{
+    position: relative;
+    display: inline-block;
+    left: 350px;
+   bottom: 350px;
+}
+
+img[src="assets-artist/S4A_FSMerch_Header.png"]{
+    width: 579px;
+  height: 579px;
+}
+
+.third{
+    display: flex;
+    background-color: black;
+    justify-content: flex-end;
+    flex-flow: row-reverse wrap;
+    width: 1528px;
+    height: 783px; 
+}
+
+.third>.text-container-noteable{
+    display: inline-block;
+    position: relative;
+    left: 300px;
+    top:106px;
+    width: 579px;
+
+}
+
+.h1-noteable{
+    color: rgb(245, 155, 34);
+    font-size: clamp(32px, 5vw, 94px);
+    line-height: clamp(54px, 5vw, 104px);
+    padding-bottom: 20px;
+}
+
+.text-noteable{
+    color:rgb(245, 155, 34) ;
+    padding-bottom:20px;
+}
+.color-span1{
+    color:rgb(245, 155, 34)
+}
+.color-span1:hover{
+    color: grey;
+}
+
+.third>.img-albums{
+    position: relative;
+    display: inline-block;
+    left: 350px;
+    bottom:150px;
+}
+img[src="assets-artist/Albums.jpg"]{
+    width: 579px;
+  height: 579px;
+}
+
+.fourth{
+    display: flex;
+    background-color:  rgb(65, 0, 245);
+    justify-content: center;
+    flex-flow: row-reverse wrap;
+    width: 1528px;
+    height: 783px; 
+
+
+}
+
+.fourth>.text-container-transforms{
+    display: inline-block;
+    position: relative;
+    left: 250px;
+    top:106px;
+    width: 579px;
+   
+}
+
+.h1-transforms{
+    color: white;
+    font-size: clamp(32px, 5vw, 94px);
+    line-height: clamp(54px, 5vw, 104px);
+    padding-bottom: 20px;
+}
+
+.h1-transforms:hover{
+        color:rgb(207, 204, 204);
+}
+
+.text-transforms{
+    color: white ;
+    padding-bottom:20px;
+}
+
+.color-span2{
+    color: white;
+
+}
+
+.color-span2:hover{
+    color: grey;
+}
+
+.fourth>.img-phone{
+    position: relative;
+    display: inline-block;
+    left: 350px;
+    bottom:150px;
+}
+
+img[src="assets-artist/phone.png"]{
+    width: 579px;
+    height: 579px;
+}
+
+.circle-slide{
+    height: 10px !important;
+    width: 10px !important;
+    border-radius: 100%;
+
+    
+    background-color: white;
+}
+.carousel-indicators1{
+    justify-content: flex-start !important;
+    margin-left: 45px !important;
+
+}
+
+.la-tua-musica{
+    background-color: black;
+    grid-area: la-tua-musica;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "container-text-button container-text-buttom";
+    height: 236px;
+    
+}
+
+.container-text-button{
+    grid-area: container-text-button;
+ display: flex;
+
+}
+
+.container-text-button>.unisciti-al-team{
+align-self: center;
+margin-left:100px ;
+color: white;
+
+}
+
+
+.h1-join{
+    font-weight: 700;
+    display: inline-block;
+}
+
+.join-the-team{
+    
+  position: absolute; 
+  align-self: center;
+  right: 100px;
   
 
 }
-header {
-    display: flex;
-    width: 100%;
-    background-color: black;
-}
-nav {
-    display: flex;
-    width: 100%;
-    height: 75px;
-    background-color: black;
-    justify-content: space-between;
-    align-items: center;
-}
-.nav1 {
-    color: white;
-    padding: 2px;
-    margin: 20px 30px;
-    font-size: 25px;
-}
-.nav2 a {
-    color: white;
-    padding: 2px;
-    margin: 20px;
-    text-decoration: none;
-    font-family: circular-spotify-arabic, circular-spotify-hebrew, circular-spotify-cyrillic, spotify-circular, Helvetica, Arial, sans-serif;;
-    font-size: 14px;
-    
-}
-.nav3 button {
-    color: white;
-    padding: 9px 25px;
-    margin: 2px;
-    
-    border: 1px white solid;
+
+.button-join{
     border-radius: 50px;
-    background-color: black;
-    font-family: circular-spotify-arabic, circular-spotify-hebrew, circular-spotify-cyrillic, spotify-circular, Helvetica, Arial, sans-serif;
-    font-size: 11px;
-}
-#buttonthree {
+    padding:16px 10px 16px 10px;
     background-color: white;
-    color: black;
-    margin-right: 35px;
+}
+.button-join:hover{
+    width: 135px;
+    height: 60px;
+}
+   
+footer {
+  grid-area: footer;
 }

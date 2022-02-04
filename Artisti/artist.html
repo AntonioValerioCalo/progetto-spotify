@@ -5,155 +5,203 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="assets-artist/spotify-intro.png">
     <link rel="stylesheet" href="CSS/artist.css">
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
     <title>Home - spotify for artists</title>
 </head>
 
 <body>
     <header>
-        <nav>
-            <div class="nav1">
-            <a><img src="" alt=""><strong>Spotify</strong> <span id="for-artist">for artist</span> </a>
+        <div class="container-header">
+            <div class="nav-spotify-artist">
+                <a><img src="assets-artist/spotify-intro.png" width="40px" alt="">
+                    <div class="near-logo"><strong>Spotify</strong> <span class="after-spotify">for artist</span></div>
+                </a>
             </div>
-            <div Class="nav2">
-            <a href="">Funzionalità</a>
-            <a href="">Assistenza</a>
-            <a href="">Risorse</a>
-            <a href="">Fornitori</a>
-            </div> 
-            <div class="nav3">
-            <button>Italiano</button>
-            <button>Accedi</button>
-            <button id="buttonthree">Ottieni l'accesso</button>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <div class="container-slider">
+            <nav Class="function">
+                <a class="function1" href="">Funzionalità</a>
+                <a class="function1" href="">Assistenza</a>
+                <a class="function1" href="">Risorse</a>
+                <a class="function1" href="">Fornitori</a>
+            </nav>
+            <div class="nav-button">
 
-            <span id="slide1">
-                <a href="">
-                    <h1>Spotify for artists</h1>
-                </a>
-                <p>I fan sono la base di tutto </br>
-                    Sviluppa la fanbase di cui hai bisogno per raggiungere i tuoi obiettivi. Scopri come i nostri
-                    strumenti possono far crescere il tuo pubblico e la tua carriera.</p>
-            </span>
-            <span id=slide2>
-                <a href="">
-                    <h1>Ti diamo il benvenuto nella prima edizione</h1>
-                </a>
-                <p>I nostri dati mostrano che il modo in cui i ascoltano la tua
-                    </br>musica potrebbe essere la chiave per incrementare il
-                    </br>merchandise </p>
-            </span>
-            <span id="slide3">
-                <a href="">
-                    <h1> le persone che danno luogo alla musica</h1>
-                </a>
-                <p>Scopri Noteable, una nuova home globale per autori,
-                    </br>produttori ed editori su Spotify.</p>
-            </span>
-            <span id="slide4">
-                <a href="">
-                    <h1>Trasforma gli ascoltatori in fan con Marquee </h1>
-                </a>
-                <p>Crea campagne che invitino gli ascoltatori ad approfondire la
-                    </br>tua nuova uscita.</p>
+                <button type="button" class="nav-button1">Italiano</button></li>
+                <button type="button" class="nav-button2">Accedi</button></li>
+                <button type="button" class="nav-button3">Ottieni l'accesso</button></li>
 
-            </span>
-
-            <div class="container-imagini-slide">
-                <img src="assets-artist/kevin.png" alt="kevin">
-                <img src="assets-artist/S4A_FSMerch_Header.png" alt="fan-study">
-                <img src="assets-artist/Albums.jpg" alt="albums">
-                <img src="assets-artist/phone.png" alt="phone">
-            </div>
-            <div class="button-for-slide">
-                <a href="">Scopri di più</a>
-                <a href="">Dai un'occhiata</a>
-                <a href="">Scopri di più</a>
-                <a href="">Preparati</a>
             </div>
         </div>
 
-        <div class="La-tua-musica">
-            <article>
-                <div class="unisciti-al-team">
-                    <h1>La tua musica. I tuoi fan. Il tuo team. Ora tutti insieme.</h1>
-                    <p>Tutti gli strumenti che ti servono per ottenere follower e crearti una carriera su Spotify, in un
-                        unico
-                        posto.</p>
-                </div class="button-unisciti-al-team">
-                    <button>Unisciti al team</button>
+    </header>
+    <main>
+        <section id="carousel1">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators carousel-indicators1">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active circle-slide" aria-current="true" aria-label="Slide 1"></button>
+                    <button class=" circle-slide" type="button " data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button class=" circle-slide" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button class=" circle-slide" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
                 </div>
-            </article>
-            <article>
-                <span id="2slide1">
-                    <a href="">
-                        <h1>Crea il tuo pubblico passo dopo passo</h1>
-                    </a>
-                    <p>Spotif è il luogo in cui più di 380 milioni di ascoltatore scoprono musica in 184<br>
+                <div class="carousel-inner">
+                    <div class="carousel-item first active">
+                        <div class="text-container-fan">
+
+                            <a class="none-decoration" href="">
+                                <h1 class="h1-fan"> I fan sono la base di tutto</h1>
+                            </a>
+                            <h4 class="text-fan">
+                                Sviluppa la fanbase di cui hai bisogno per raggiungere i tuoi
+                                obiettivi. Scopri
+                                come
+                                i nostri
+                                strumenti possono far crescere il tuo pubblico e la tua carriera.</h4>
+                            <a class="none-decoration" href=""><span class="color-span">Scopri di più-></span></a>
+                        </div>
+                        <div class="img-kevin">
+                            <img src="assets-artist/kevin.png" class="" alt="...">
+                        </div>
+                    </div>
+                    <div class="carousel-item second">
+                        <div class="text-container-welcome">
+                            <a class="none-decoration" href="">
+                                <h1 class="h1-welcome">Ti diamo il benvenuto nella prima edizione trimestrale di Fan
+                                    Study</h1>
+                            </a>
+                            <h4 class="text-welcome">I nostri dati mostrano che il modo in cui i ascoltano la tua
+                                musica potrebbe essere la chiave per incrementare il
+                                merchandise </h4>
+                            <a class="none-decoration" href=""><span class="color-span">Dai un occhiata-></span></a>
+                        </div>
+                        <div class="img-s4a">
+                            <img src="assets-artist/S4A_FSMerch_Header.png" class="" alt="...">
+                        </div>
+                    </div>
+                    <div class="carousel-item third">
+                        <div class="text-container-noteable">
+                            <a class="none-decoration" href="">
+                                <h1 class="h1-noteable"> Per le persone che danno luogo alla musica</h1>
+                            </a>
+                            <h4 class="text-noteable">Scopri Noteable, una nuova home globale per autori,
+                                produttori ed editori su Spotify.</h4>
+                            <a class="none-decoration" href=""><span class="color-span1">Scopri di più-></span></a>
+                        </div>
+                        <div class="img-albums">
+                            <img src="assets-artist/Albums.jpg" class="" alt="...">
+                        </div>
+                    </div>
+                    <div class="carousel-item fourth ">
+                        <div class="text-container-transforms">
+                            <a class="none-decoration" href="">
+                                <h1 class="h1-transforms">Trasforma gli ascoltatori in fan con Marquee </h1>
+                            </a>
+                            <h4 class="text-transforms">Crea campagne che invitino gli ascoltatori ad approfondire la
+                                tua nuova uscita.</h4>
+                            <a class="none-decoration" href=""><span class="color-span2">Preparati-></span></a>
+                        </div>
+                        <div class="img-phone">
+                            <img src="assets-artist/phone.png" class="" alt="...">
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section class="la-tua-musica">
+<div class="container-text-button">
+            <div class="unisciti-al-team">
+                <h1 class="h1-join">La tua musica. I tuoi fan. Il tuo team. Ora </br>tutti insieme.</h1>
+                <h6 class="text-join">Tutti gli strumenti che ti servono per ottenere follower e crearti una carriera su Spotify, in un
+                    unico
+                    posto.</h6>
+            </div>
+            <div class="join-the-team">
+            <button class="button-join">Unisciti al team</button>
+            </div>
+        </section>
+
+        <article class="2slide">
+            <span id="2slide1">
+                <a href="">
+                    <h1>Crea il tuo pubblico passo dopo passo</h1>
+                </a>
+                <p>Spotif è il luogo in cui più di 380 milioni di ascoltatore scoprono musica in 184<br>
                     mercati. Che tu sia un artista affamato o emergente, Spotify for Artists è l'unico</br>
                     modo per proporre nuovi brani agli editori di alcune delle playlis più seguite al</br>
                     mondo</p>
-                </span>
-                <span id=2slide2>
-                    <a href="">
-                        <h1>Ispira I fan con la tua cratività</h1>
-                    </a>
-                    <p>Con Spotify for Artists potrai esibire al meglio il tuo talento. Con i nostri strumenti</br>
+            </span>
+            <span id=2slide2>
+                <a href="">
+                    <h1>Ispira I fan con la tua cratività</h1>
+                </a>
+                <p>Con Spotify for Artists potrai esibire al meglio il tuo talento. Con i nostri strumenti</br>
                     per il profilo, puoi modificare la biografia e le foto ogni volta che trovi l'ispirazione.</br>
-                    Lascia che i fan entrino ner tuo mondo con la Selezione dell'artista, le playlist</br> 
+                    Lascia che i fan entrino ner tuo mondo con la Selezione dell'artista, le playlist</br>
                     in primo piano, i link per la raccolta fonde e aggiungendo immagini a ciclo continui ai</br>
-                     tuoi bran con Canvas.</p>
-                </span>
-                <span id="2slide3">
-                    <a href="">
-                        <h1> Impara dai tuoi fan</h1>
-                    </a>
-                    <p>Che tu debba prendere una decisione in merito a tour, uscite o promozione:</br>
+                    tuoi bran con Canvas.</p>
+            </span>
+            <span id="2slide3">
+                <a href="">
+                    <h1> Impara dai tuoi fan</h1>
+                </a>
+                <p>Che tu debba prendere una decisione in merito a tour, uscite o promozione:</br>
                     Spotify for Artists ha i dati che ti occorrono. Scopri le prestazioni dei tuoi brani, le </br>
-                     nuove uscite, osserva l'andamento delle statisctiche in tempo reale.</p>
-                </span>
-                
-    
-                <div class="container-imagini-slide">
-                    <img src="assets-artist/Summer_Walker.png" alt="Summer_walker">
-                    <img src="assets-artist/ispira.png" alt="ispira">
-                    <img src="assets-artist/impara.png" alt="albums">
-                  
-                </div>
-                <div class="slide2-buttom">
-                    <button type="button">visualizza altre funzionalità</button>
-                    <button type="button">VISUALIZZA ALTRE FUNZIONALITA'</button>
-                    <button type="button">VISUALIZZA ALTRE FUNZIONALITA'</button>
-                </div>
+                    nuove uscite, osserva l'andamento delle statisctiche in tempo reale.</p>
+            </span>
+
+
+            <div class="container-imagini-slide">
+                <img src="assets-artist/Summer_Walker.png" alt="Summer_walker">
+                <img src="assets-artist/ispira.png" alt="ispira">
+                <img src="assets-artist/impara.png" alt="albums">
+
+            </div>
+            <div class="slide2-buttom">
+                <button type="button">visualizza altre funzionalità</button>
+                <button type="button">VISUALIZZA ALTRE FUNZIONALITA'</button>
+                <button type="button">VISUALIZZA ALTRE FUNZIONALITA'</button>
+            </div>
+        </article>
+        <section class="jeremy-zucker">
+            <img src="assets-artist/Jeremy.jpg" alt="">
+            <p>con</p>
+            <h1>Jeremy Zucker</h1>
+            <a href="">Rian Kirchhoff</a> <br>
+            <a href="">Candice Watkins</a> <br>
+            <a href="">Gang starr</a> <br>
+            <h1>“
+                Che tu sia un artista famoso o emergente, Spotify for Artists ti aiuta a trovare i tuoi fan e a
+                rivolgerti meglio a loro.</h1>
+            <h2>-- Jeremy Zucker</h2>
+            <h3>artista</h3>
+        </section>
+        <section class="how-begin">
+            <h1>articoli dell'assistenza</h1>
+            <p>Come iniziare</p>
+            <a href="">Distribuire musica su spotify</a> <br>
+            <a href="">Invitare i membri del team</a> <br>
+            <a href="">Proporre la musica ai nostri editor delle playlist</a> <br>
+            <a href="">Gestione del profilo artista</a> <br>
+            <a href="">Visualizza tutte le FAQ</a> <br>
             </article>
-            <article>
-                <img src="assets-artist/Jeremy.jpg" alt="">
-                <p>con</p>
-                <h1>Jeremy Zucker</h1>
-                <a href="">Rian Kirchhoff</a> <br>
-                <a href="">Candice Watkins</a> <br>
-                <a href="">Gang starr</a> <br>
-                <h1>“
-                    Che tu sia un artista famoso o emergente, Spotify for Artists ti aiuta a trovare i tuoi fan e a
-                    rivolgerti meglio a loro.</h1>
-                <h2>-- Jeremy Zucker</h2>
-                <h3>artista</h3>
-            </article>
-            <article>
-                <h1>articoli dell'assistenza</h1>
-                <p>Come iniziare</p>
-                <a href="">Distribuire musica su spotify</a> <br>
-                <a href="">Invitare i membri del team</a> <br>
-                <a href="">Proporre la musica ai nostri editor delle playlist</a> <br>
-                <a href="">Gestione del profilo artista</a> <br>
-                <a href="">Visualizza tutte le FAQ</a> <br>
-            </article>
-            </section>
+        </section>
     </main>
     <footer>
         <article>
@@ -179,6 +227,7 @@
             <p>@ 2022 spotify AB</p>
         </article>
     </footer>
+    <script src=""></script>
 </body>
 
 </html>
