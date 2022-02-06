@@ -12,6 +12,10 @@ body {
     "main main"
     "footer footer";
 }
+:root{
+  --height:786px;
+  --width:100%;
+}
 .none-decoration {
   text-decoration: none;
  
@@ -124,7 +128,8 @@ main {
   gap: 0px 0px;
   grid-template-areas:
     "carousel1"
-    "la-tua-musica"
+    "your-music"
+    "container-mother-slide2"
     "jeremy-zucker"
     "how-begin";
 }
@@ -338,9 +343,9 @@ img[src="assets-artist/phone.png"]{
 
 }
 
-.la-tua-musica{
+.your-music{
     background-color: black;
-    grid-area: la-tua-musica;
+    grid-area: your-music;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -387,7 +392,95 @@ color: white;
     width: 135px;
     height: 60px;
 }
-   
+
+.container-mother-slide2{
+  grid-area: container-mother-slide2;
+
+}
+.oneslide{
+  height: var(--height);
+  width: var(--width);
+}
+.flexbox-summer{
+  background-color: rgb(180, 155, 200);
+  display: flex !important;
+  flex-flow:row ;
+  height:var(--height);
+  width:var(--width);
+align-items: center;
+gap: 150px;
+
+
+  
+
+}
+ .flexbox-summer>.img-summer-walker{
+   display: inline-block;
+   order:1;
+   margin-left:100px ;
+  
+  
+ }
+
+img[src="assets-artist/Summer_Walker.png"]{
+  width: 606px;
+  height: 606px;
+}
+
+.flexbox-summer>.son-from-container-summer{
+  display: inline-block;
+  order: 2;
+  width:870px;
+ 
+ 
+
+}
+
+
+  
+
+
+.h1-public-text{
+  color: black;
+  font-size:48px;
+}
+
+.h4-public{
+ 
+padding-top:15px ;
+padding-bottom:10px;
+ 
+
+
+}
+.h4-public-text{
+  font-size: 18px;
+}
+
+.container-button-summer{
+padding-top: 10px;
+width:400px;
+height: 100px;
+}
+
+.button-summer{
+  display: inline-block;
+  position: relative;
+width: 253px;
+  padding:18px 11px 18px 11px;
+  border-radius: 500px;
+  color: rgb(180, 155, 200) ;
+  background-color: black;
+ 
+}
+
+.button-summer:hover{
+  padding:20px 12px 20px 12px;
+}
+   .jeremy-zucker{
+     grid-area: jeremy-zucker;
+   }
+
 footer {
   grid-area: footer;
 }
