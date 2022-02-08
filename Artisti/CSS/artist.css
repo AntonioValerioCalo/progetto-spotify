@@ -477,6 +477,77 @@ width: 253px;
 .button-summer:hover{
   padding:20px 12px 20px 12px;
 }
+
+.flexbox-ispira{
+  background-color:rgb(237, 126, 126) ;
+  display: flex !important;
+  flex-flow:row ;
+  height:var(--height);
+  width:var(--width);
+align-items: center;
+gap: 150px;
+}
+
+.flexbox-ispira>.img-ispira{
+  display: inline-block;
+   order:1;
+   margin-left:100px ;
+}
+
+img[src="assets-artist/ispira.png"]{
+  width: 606px;
+  height: 606px;
+}
+
+.flexbox-ispira>.son-from-container-ispira{
+  order:2;
+}
+
+.h1-ispira-text{
+  font-size: 48px;
+  line-height:56px;
+
+}
+.h4-ispira-text{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.flexbox-impara{
+  background-color:rgb(217, 95, 155) ;
+  display: flex !important;
+  flex-flow:row ;
+  height:var(--height);
+  width:var(--width);
+align-items: center;
+gap: 150px;
+}
+
+.flexbox-ispira>.img-impara{
+  display: inline-block;
+   order:1;
+   margin-left:100px ;
+}
+
+img[src="assets-artist/impara.png"]{
+  width: 606px;
+  height: 606px;
+}
+
+.flexbox-ispira>.son-from-container-impara{
+  order:2;
+}
+
+.h1-impara-text{
+  font-size: 48px;
+  line-height:56px;
+
+}
+.h4-ispira-text{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+}
    .jeremy-zucker{
      grid-area: jeremy-zucker;
    }
