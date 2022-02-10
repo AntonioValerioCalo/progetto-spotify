@@ -566,8 +566,134 @@ padding-bottom:10px;
 }
    .jeremy-zucker{
      grid-area: jeremy-zucker;
+     background-color:rgb(24, 24, 24); 
+     color: white;
+     height: 1120px;
    }
 
-footer {
+   
+     
+     
+    
+     
+   
+   img[src="assets-artist/Jeremy.jpg"]{
+  height: 800px;
+  width: 1800px;
+
+
+   }
+  
+   .son-from-container-jeremy{
+     display: flex;
+     flex-flow: wrap column;
+     justify-content: center;
+     align-items: center;
+   }
+
+   .img-container-jeremy{
+     order:1;
+   }
+
+  .container-text-jeremy{
+    order:2;
+    display:flex;
+    align-items: center;
+    gap: 400px;
+    margin-top: 50px;
+    
+    
+  }
+
+ 
+
+
+ 
+
+
+   
+   .p-jeremy-right{
+     font-size: 80px;
+     line-height: 14px;
+     border: 0px;
+     margin-inline:0px;
+
+
+   }
+
+   .p-jeremy-right-header{
+     font-size: 32px;
+     font-weight: 400;
+   }
+
+   .p-jeremy-left{
+     font-size:48px;
+    
+   }
+
+   .hyperlink-jeremy{
+     font-size: 14px;
+     text-decoration: none;
+     color:white;
+   }
+
+   .how-begin{
+    color: black;
+    background-color:aliceblue;
+    height:400px;
+   }
+   
+  .container-how-begin{
+    display:flex;
+    height: 300px;
+    
+  }
+    
+.container-how-begin>.left-how-begin{
+  display: flex;
+  flex: 50%;
+flex-direction: column;
+margin-left: 30px;
+margin-top:37px;
+  
+
+}
+  
+.container-how-begin>.list-how-begin{
+  flex: 50%;
+  flex-direction: column;
+  display: flex;
+  
+}
+
+.ul-jeremy{
+  list-style: none;
+}
+
+.li-jeremy{
+  padding-top: 40px;
+  
+
+}
+.none-decoration1{
+  text-decoration: none;
+  color: black;
+}
+
+.h1-how-begin{
+  font-weight: bold;
+ font-size: 44px;
+ 
+}
+
+   footer {
   grid-area: footer;
+background-color: black;
+height:440px;
+}
+#logo{
+
+
+
+
 }
